@@ -1,0 +1,382 @@
+/* 
+	Denia web content manager 
+	
+	main-color: #fea926;
+	main-color-dark: #956112;
+*/
+
+/* RESET ------------------------------------- */
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body, html {
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul { list-style: none; }
+img { outline: none; }
+a {
+	outline: none;
+}
+a:active,
+a:hover { outline: 0; }
+a:focus { outline: thin dotted; }
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+	line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	user-select: none;
+}
+button[disabled],
+input[disabled] { cursor: default; }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+::-ms-clear {
+	display: none;
+}
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+@-ms-viewport{
+	width: device-width;
+}
+
+/* MAIN CSS ------------------------------------------------------------ */
+body {
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	display: flex;
+}
+#page {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 7.5px;
+	width: 100%;
+}
+#main {
+	flex: 1;
+	padding-bottom: 60px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+h1 {
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 1.35;
+	letter-spacing: -0.02em;
+	margin: 30px 0;
+}
+h2 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 48px;
+	/*margin: 24px 0;*/
+}
+h3 {
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 40px;
+	margin: 24px 0;
+}
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	-moz-osx-font-smoothing: grayscale;
+	/*margin-top: 24px;
+	margin-bottom: 16px;*/
+}
+h5 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+h6 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0;
+	margin-bottom: 16px;
+}
+a {
+	color: rgb(255,64,129);
+}
+
+.button {
+	background: #fea926; /*main-color*/
+	border: none;
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 14px;
+	text-decoration: none;
+	width: auto;
+}
+.button:hover,
+.button:focus { background: #956112; } /*main-color-dark*/
+.button-wrap {
+	margin-bottom: 24px;
+	text-align: center;
+}
+button.button {
+	max-width: 400px;
+	width: 100%;
+}
+
+/* BANNER */
+#banner {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 1px solid grey;
+}
+#logo {
+	width: 172px;
+	height: 49px;
+	max-height: 49px;
+}
+/* On mobile devices the logo is on the right. In large screens it is on the left */
+.mobileonly {
+	display: none;
+}
+.pconly {
+	display: initial;
+}
+
+/* SECTIONS */
+h4.section-title {
+	color: #fea926; /*main-color*/
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #fea926;
+	line-height: 0.1em;
+	margin: 10px 0 30px;
+}
+
+h4.section-title span {
+	background: #fff;
+	padding: 0 10px;
+}
+
+/* CONTACT */
+input {
+	height: 40px;
+	line-height: 40px;
+}
+textarea {
+	height: 80px;
+	resize: none;
+}
+input, textarea {
+	border: none;
+	border-bottom: 2px solid #fea926; /*main-color*/
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 400px;
+	width: 100%;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* CUSTOM SECTIONS */
+.custom-section {
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 5px;
+	text-align: justify;
+}
+/* Images in the sections created by the clients*/
+.custom-section img {
+	margin: 5px;
+}
+
+/* OFFERTS */
+#offerts {
+	display: flex; 
+	flex-wrap: wrap; 
+	width: 100%; 
+	padding: 20px; 
+	padding-top: 0; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	margin-top: 20px;
+}
+#offert {
+	margin: auto; 
+	display: flex; 
+	flex-direction: column; 
+	width: 300px; 
+	margin-top: 20px; 
+	padding: 15px; 
+	border: 1px solid lightgrey; 
+	background-color: white;
+	justify-content: space-around;
+}
+#offert-line {
+	margin: 5px auto; 
+	text-align: enter;	
+	font-size: 12px;
+}
+
+/* CONTACT */
+#contact {
+	width: 100%;
+	margin: 0 auto; 
+	margin-top: 60px;
+	padding-top: 5px; 
+}
+
+/* MAP */
+#map {
+	width: 100%;
+	margin: 0 auto; 
+	margin-top: 60px;
+	padding-top: 5px; 
+}
+
+/* FOOTER */
+#footer {
+	text-align: center; 
+	font-size: 14px;
+	color: black;
+	font-weight: 900;
+	background-color: #eee;
+	padding: 30px 15px;
+}
+#footer a {
+	color: black;
+}
+
+/* MENU ----------------------------------------------------- */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul.topnav li a.menubutton {
+    background-color: #fea926;	/* main-color */
+    color: white;
+}
+ul.topnav li a:hover {
+	background-color: #956112;
+    color: white;
+}
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+	display: none;
+}
+#admin {
+	padding: 7px; 
+	margin-left: 12px;'
+}
+#admin img {
+	vertical-align: middle;
+}
+#admin span.mobileonly {
+	height: 100%; 
+	vertical-align: middle; 
+	padding-left: 10px;
+}
+
+/* Content manager */
+#manager {
+	width: 100%;
+	margin: 0 auto; 
+	margin-top: 40px;
+}
+
+/* MOBILE ------------------------------ */
+/* hide all list items, except for the last one ("Contacto"). */
+/* Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {
+  	display: none;
+  }
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+  ul.topnav li a.menubutton {
+	background-color: white;
+	color: #fea926;
+	font-weight: bold;
+  }
+  ul.topnav li a.menubutton:hover {
+	background-color: #956112;
+	color: white;
+  }
+  .mobileonly {
+	display: initial;
+  }
+  .pconly {
+	display: none;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+/* This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}

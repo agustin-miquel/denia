@@ -1,0 +1,1 @@
+		<footer id="footer">This is a test application (https://github.com/agustin-miquel/denia)</footer>

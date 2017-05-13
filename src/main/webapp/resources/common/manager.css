@@ -1,0 +1,369 @@
+/* 
+	Styles of the content manager pages 
+*/
+
+/* RESET ------------------------------------- */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body, html {
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul { list-style: none; }
+img { outline: none; }
+a {
+	outline: none;
+}
+a:active,
+a:hover { outline: 0; }
+a:focus { outline: thin dotted; }
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+	line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	user-select: none;
+}
+button[disabled],
+input[disabled] { cursor: default; }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+::-ms-clear {
+	display: none;
+}
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+@-ms-viewport{
+	width: device-width;
+}
+
+/* STYLES ------------------------------------- */
+
+body {
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	display: flex;
+}
+#page {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 7.5px;
+	width: 100%;
+}
+#main {
+	flex: 1;
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 25px;
+	color: #333;
+}
+#buttons {
+	margin-top: 12px;
+}
+a {
+	color: #956112;
+	text-decoration: none;
+}
+a:hover { 
+	color: #fea926;
+}
+li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* BUTTONS *********************/
+
+button {
+	padding: 3px 8px;
+	text-decoration: none;
+	border-radius: 4px;
+	min-width: 90px;
+	
+	margin-top: 15px;
+	margin-left: 5px;
+
+	color: black;
+	background: white;
+	border: 1px solid #333;
+}
+button.ok {
+	color: white;
+	background: #427847;
+	border: 1px solid #427847;
+}
+a.ok {
+	color: #427847;
+	background: lightgrey;
+	border: 1px solid #427847;
+	padding: 0 4px;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: normal;
+	min-width: 143px;
+}
+button.new {
+	color: white;
+	background: #4F67E0;
+	border: 1px solid #427847;
+}
+button.del {
+	color: white;
+	background: #C42421;
+	border: 1px solid #427847;
+}
+
+/* LABELS ***********************/
+
+.title {
+	color: #fea926;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.label {
+	color: #956112;
+	font-size: 14px;
+	font-style: italic;	
+	font-weight: bold;
+}
+
+.sectionlabel {
+	color: #956112;
+	font-size: 14px;
+	font-style: italic;
+	text-decoration: underline;	
+}
+
+.menuitem {
+	font-weight: bold;
+	font-size: 16px;	
+} 
+
+/* BANNER **********************/
+
+#banner1 {
+	margin-top:20px;
+}
+#mainlogo {
+	float:left;
+}
+#logotext {
+	float:left;
+	color:#859bd7;
+	font-weight:bold;
+	margin-left:20px;	
+}
+#logotext1 {
+	font-size:40px;
+}
+#logotext2 {
+	font-size:16px;
+}
+#loginfo {
+	float:right;
+}
+#username {
+	font-size:14px; 
+	color:#333;
+}
+
+/* On mobile devices the logo is on the right. In large screens it is on the left */
+.mobileonly {
+	display: none;
+}
+.pconly {
+	display: initial;
+}
+
+/* LOGIN PAGE ***********/
+
+ .info {
+	margin-left:4px; 
+	margin-bottom:5px;
+	color: #956112;
+	font-size: 16px;
+	font-weight: bold;
+}
+.loginexit {
+    float: left;
+    margin-left: 10px;
+}
+#login_messages {
+	clear: both;
+	padding-top: 20px;	
+}
+.login_msg {
+	font-weight: bold;
+	font-style: italic;
+	color: #666;
+}
+/* LISTS ****************/
+
+.list td {
+	font-size: 13px;
+}
+.list th {
+	color: #956112;
+}
+table.list, table.list th, table.list td {
+    border: 1px solid lightblue;
+}
+td, th {
+	padding: 0 4px;
+}
+th {
+	text-align: left;
+}
+
+/* SECTIONS CONFIG ***********/
+
+#sections th {
+	color: #956112;
+	font-weight: normal;
+	font-style: italic;	
+}
+#sections td {
+}
+#sections tr {
+	border-bottom: 1px solid grey;
+}
+#sections tr * {
+	vertical-align: middle;	
+}
+#sections button {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+/* UPLOADER *******************/
+
+#uploader {
+	max-width: 530px;
+	border: 1px solid grey;
+	padding: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+/* ERRORS & MSG ******************/
+
+.error {
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+}
+.message {
+	color: green;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* ERROR PAGE ********************/
+
+#errorheader {
+	font-size: 20px;
+	font-weight: bold;
+	color: darkred;
+	text-align: left;
+	margin-bottom: 20px;
+}
+#errorinfo {
+	font-size: 14px;
+	text-align: left;
+}
+
+/* CHANGE PASSWORD ***************/
+
+#showhide {
+	display: inline-block;
+	width: 124px;
+	line-height: 20px;
+	text-align: center;
+	border:1px solid black;
+	color:black;
+	border-radius:3px;
+	font-weight:normal;
+}
+
+/* FOOTER ********************/
+
+#footer {
+	text-align: right; 
+	font-size: 12px;
+	font-style: italic;
+	color: #666;
+	padding-bottom: 5px;
+}
+
+/* MOBILE ------------------------------ */
+/* hide all list items, except for the last one ("Contacto"). */
+/* Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {
+  	display: none;
+  }
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+  ul.topnav li a.menubutton {
+	background-color: white;
+	color: #fea926;
+	font-weight: bold;
+  }
+  ul.topnav li a.menubutton:hover {
+	background-color: #956112;
+	color: white;
+  }
+  .mobileonly {
+	display: initial;
+  }
+  .pconly {
+	display: none;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+/* This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}

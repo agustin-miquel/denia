@@ -1,0 +1,115 @@
+/* INDEX PAGE BANNER ******/
+
+#banner1 {
+	margin-top:20px;
+}
+#mainlogo {
+	float:left;
+}
+#logotext {
+	float:left;
+	color:#859bd7;
+	font-weight:bold;
+	margin-left:20px;	
+}
+#logotext1 {
+	font-size:40px;
+}
+#logotext2 {
+	font-size:16px;
+}
+#loginfo {
+	float:right;
+}
+
+/* INDEX PAGE HEADER ***/
+
+h2 {
+  	font: 400 30px/1.5 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  	margin: 50px 0 20px 0;
+  	padding: 0;
+	color:grey;
+	text-align:left;
+}
+
+/* INDEX PAGE MENU *******/
+
+#lista {
+ 	float:left;	
+ 	text-align:left;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+ul li {
+	font: 200 18px/1.5 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border-bottom: 1px solid #ccc;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+ul li a:hover {
+	background: #f6f6f6;
+}
+
+#pagename {
+	color:#859bd7;
+	font-weight:bold;	
+}
+#pagedesc {
+	margin-left:10px; 
+	color:grey;'
+	font-weight:normal;	
+}
+
+/* INDEX PAGE FOOTER ---------- */
+
+#indexfooter #footer {
+	text-align: right; 
+	font-size: 12px;
+	font-style: italic;
+	color: #666;
+	padding: 20px;
+	background-color: white;
+}
+
+
+/* MOBILE -------------- */
+
+@media screen and (max-width:680px) {
+  ul li {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 40px;
+  }
+  ul li a {
+	text-decoration: none;
+	background-color: white;
+	color: #fea926;
+	font-weight: bold;
+  }
+  ul li a:hover {
+	background-color: lightgrey;
+	color: white;
+  }
+  ul {
+    position: relative;
+  }
+  ul li {
+    float: none;
+    display: inline;
+  }
+  ul li a {
+    display: block;
+    text-align: left;
+  }
+}
